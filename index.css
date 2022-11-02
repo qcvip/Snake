@@ -1,0 +1,70 @@
+.content {
+  width: 640px;
+  height: 640px;
+  margin: 100px auto;
+  position: relative; /* 鐩稿�瑰畾浣� */
+}
+.btn {
+  width: 100%;
+  height: 100%;
+  position: absolute; /* 缁濆�瑰畾浣� */
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2; /* 鑳芥诞鍦ㄦ渶涓婇潰 */
+}
+.btn button {
+  background: none;
+  border: none; /* 杈规�� */
+  background-size: 100% 100%;
+
+  cursor: pointer; /* 榧犳爣鏍峰紡 */
+  outline: none; /* 鍙栨秷杈规�� 鍜宐order寰堝儚 */
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.startBtn button {
+  width: 200px;
+  height: 80px;
+  background-image: url(./images/ks.png);
+  margin-left: -100px; /* 缁欏�介珮鐨勪竴鍗婃潵灞呬腑 */
+  margin-top: -40px;
+}
+.pauseBtn {
+  display: none;
+}
+.pauseBtn button {
+  width: 70px;
+  height: 70px;
+  background-image: url(./images/zt.png);
+  margin-left: -35px;
+  margin-top: -35px;
+}
+
+/*snakewrap*/
+#snakeWrap {
+  width: 600px;
+  height: 600px;
+  background: #225675;
+  border: 20px solid #7dd9ff;
+  position: relative;
+}
+/* #snakeWrap div{
+  width: 20px;
+  height: 20px;
+} */
+
+.snakeHead {
+  background-image: url(./images/tou.png);
+  background-size: cover;
+}
+.snakeBody {
+  background-color: #0c3fcc;
+  border-radius: 50%;
+}
+.food {
+  background-image: url(./images/sw.png);
+  background-size: cover;
+}
